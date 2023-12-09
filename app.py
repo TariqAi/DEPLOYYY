@@ -27,6 +27,7 @@ BloodPressure = st.text_input('ضغط الدم')
 SkinThickness = st.text_input('سماكة الجلد')
 Insulin = st.text_input('مستوى الانسولين')
 BMI = st.text_input('مؤشر كتلة الجسم')
+DiabetesPedigreeFunction = st.text_input('وظيفة نسب مرض السكري')
 Age = st.text_input('العمر')
     
     
@@ -36,7 +37,7 @@ diab_diagnosis = ''
     # creating a button for Prediction
     
 if st.button('اختبار نتيجة الفحوصات'):
-        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, Age]])
+        diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI,DiabetesPedigreeFunction, Age]])
         
         if (diab_prediction[0] == 1):
           diab_diagnosis = 'الشخص مصاب بمرض السكري'
