@@ -13,7 +13,7 @@ from streamlit_option_menu import option_menu
 
 
 # loading the saved model
-diabetes_model = pickle.load(open('C:/Users/ZMZM/Desktop/Deploy model/saved model/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
 st.markdown("<h2 style='text-align: center; color: yellow;'>نظام لمعرفة اذا كنت مصاب بمرض السكري أو غير مصاب</h2>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: right; color: white;'>يرجى ادخال بيانات الفحوصات الاتية</h4>", unsafe_allow_html=True)
