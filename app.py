@@ -47,4 +47,4 @@ st.success(diab_diagnosis)
     
     
 # Set a title with adjusted size
-st.markdown("<h5style='text-align: center; color: red;'> Founded by Tariq Ibrahim </h5>", unsafe_allow_html=True)
+st.markdown("<h5>style='text-align: center; color: red;'> Founded by Tariq Ibrahim </h5>", unsafe_allow_html=True)
