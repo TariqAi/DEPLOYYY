@@ -12,11 +12,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved model
 
-diabetes_model = pickle.load(open('C:/Users/ZMZM/Desktop/Jupyter Note/Multiple Disease Prediction System WEB/Saved Model/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/ZMZM/Desktop/Jupyter Note/Multiple Disease Prediction System WEB/Saved Model/heart_disease_model.sav', 'rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
-parkinson_disease_model = pickle.load(open('C:/Users/ZMZM/Desktop/Jupyter Note/Multiple Disease Prediction System WEB/Saved Model/parkinson_disease_model.sav', 'rb'))
+parkinson_disease_model = pickle.load(open('parkinson_disease_model.sav', 'rb'))
 
 
 
