@@ -36,13 +36,13 @@ diab_diagnosis = ''
     
     # creating a button for Prediction
     
-if st.button('Diabetes Test Result'):
+if st.button('اختبار نتيجة الفحوصات'):
         diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
         
         if (diab_prediction[0] == 1):
-          diab_diagnosis = 'The person is diabetic'
+          diab_diagnosis = 'الشخص مصاب بمرض السكري'
         else:
-          diab_diagnosis = 'The person is not diabetic'
+          diab_diagnosis = 'الشخص غير مصاب بمرض السكري'
         
 st.success(diab_diagnosis)
     
